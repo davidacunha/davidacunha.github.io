@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David da Cunha — Product Manager</title>
+<meta name="description" content="David da Cunha — Product Manager em CRMBonus. Portfólio profissional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="controls">
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">🌙</button>
+  <div class="lang-switch" role="group" aria-label="Language switch">
+    <button class="lang-btn" data-lang="pt">PT</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="es">ES</button>
+  </div>
+</div>
+
+<main class="page">
+
+  <header class="hero">
+    <img class="hero-photo" src="assets/photo.png" alt="David da Cunha">
+    <div class="hero-text">
+      <h1>David da Cunha</h1>
+      <p class="hero-title" data-i18n="header.title"></p>
+      <p class="hero-meta">
+        <span data-i18n="header.location"></span>
+        <span class="dot">·</span>
+        <a class="linkedin-btn" href="https://www.linkedin.com/in/daviidjmc/" target="_blank" rel="noopener" aria-label="LinkedIn de David da Cunha">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </p>
+    </div>
+  </header>
+
+  <section class="block">
+    <h2 data-i18n="labels.summary"></h2>
+    <p class="summary" data-i18n="summary"></p>
+  </section>
+
+  <section class="block">
+    <h2 data-i18n="labels.experience"></h2>
+
+    <div class="company">
+      <h3>CRMBonus</h3>
+      <div class="roles" id="crmbonus-roles"></div>
+    </div>
+
+    <div class="company">
+      <h3>Britânia Eletrodomésticos</h3>
+      <div class="roles" id="britania-roles"></div>
+    </div>
+  </section>
+
+  <section class="block two-col">
+    <div>
+      <h2 data-i18n="labels.education"></h2>
+      <div class="edu">
+        <p class="edu-degree" data-i18n="education.degree"></p>
+        <p class="edu-school">Centro Universitário Católica de Santa Catarina</p>
+        <p class="edu-dates" data-i18n="education.dates"></p>
+      </div>
+
+      <h2 class="mt" data-i18n="labels.languages"></h2>
+      <ul class="lang-list" id="lang-list"></ul>
+    </div>
+
+    <div>
+      <h2 data-i18n="labels.skills"></h2>
+      <ul class="tags" id="skills-list"></ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a href="https://www.linkedin.com/in/daviidjmc/" target="_blank" rel="noopener">LinkedIn</a>
+    <span class="dot">·</span>
+    <a href="https://github.com/davidacunha" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
