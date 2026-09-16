@@ -402,3 +402,14 @@ h1, h2, h3 {
 }
 
 .footer a:hover { color: var(--accent); }
+
+/* Print */
+@media print {
+  :root { --bg: #fffdf2; --surface: #ffffff; --text: #000000; --text-muted: #55534a; --accent: #000000; --accent-soft: #f2efdc; --border: #e4e0c9; --tag-bg: #f2efdc; --linkedin-bg: #000000; --linkedin-fg: #fffdf2; }
+  .controls { display: none; }
+  body { padding-block: 0; }
+  .role { break-inside: avoid; }
+  .company { break-inside: avoid-page; }
+  .role.collapsed ul { display: block; }
+  .role.collapsed .role-chevron { transform: none; }
+}
